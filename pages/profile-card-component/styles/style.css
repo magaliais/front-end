@@ -15,7 +15,20 @@ html, body {
 }
 
 body {
-  background: var(--dark-cyan)
+  background: var(--dark-cyan);
+  overflow: hidden;
+}
+
+body #top-bg {
+  position: absolute;
+  transform: translate(-25%, -50%);
+  z-index: -1;
+}
+
+body #bottom-bg {
+  position: absolute;
+  transform: translate(70%, 40%);
+  z-index: -1;
 }
 
 main {
@@ -56,7 +69,12 @@ header > img {
   border: 8px solid #fff;
   border-radius: 99px;
   margin-top: -4rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;;
+}
+
+.profile p {
+  text-align: center;
+  line-height: 1.5;
 }
 
 .profile > p > strong {
@@ -65,14 +83,13 @@ header > img {
 
 footer {
   border-radius: 0 0 15px 15px;
+  border-top: 1px solid var(--dark-gray);
   display: flex;
   justify-content: space-around;
 
-  line-height: 1.5;
+  line-height: 1;
 
   padding: 0.2rem;
-
-  box-shadow: inset 0 1px 20px rgba(0,0,0,0.25);
 }
 
 .info {
@@ -81,4 +98,9 @@ footer {
   align-items: center;
 
   text-align: center;
+}
+
+footer .info small {
+  font-size: 10px;
+  letter-spacing: 0.2rem;
 }
