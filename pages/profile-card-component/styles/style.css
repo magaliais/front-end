@@ -19,29 +19,33 @@ body {
   overflow: hidden;
 }
 
-body #top-bg {
-  position: absolute;
-  transform: translate(-25%, -50%);
-  z-index: -1;
-}
-
-body #bottom-bg {
-  position: absolute;
-  transform: translate(70%, 40%);
-  z-index: -1;
-}
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   height: 100vh;
 }
 
 .card {
+  position: relative;
   background-color: #fff;
   border-radius: 15px;
+}
+
+body #top-bg {
+  position: absolute;
+  top: -45em;
+  right: 10em;
+  z-index: -1;
+}
+
+body #bottom-bg {
+  position: absolute;
+  bottom: -45em;
+  left: 10em;
+  z-index: -1;
 }
 
 .card p {
