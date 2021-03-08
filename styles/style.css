@@ -1,24 +1,76 @@
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+
+  color: #046E33;
+}
+
+body {
+  background: #202124;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 header {
   display: flex;
-  justify-content: center;
-
-  padding-top: 2rem;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5rem 4rem 0;
 }
 
-.container {
+header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 99px;
+
+  border: 5px solid #046E33;
+
+  box-shadow: 0 5px 10px 5px rgba(100,100,100,0.25);
+}
+
+header span {
+  font-size: 1.5rem;
+  margin-left: 4rem;
+  margin-top: 5rem;
+}
+
+main {
+  height: 60vh;
+
   display: flex;
-  justify-content: center;
-
-
-  padding-top: 5rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
-li a {
-  text-decoration: none;
+main .box {
+  width: 300px;
+  height: 300px;
+
+  background: #f0f1f8;
+
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .box img {
+  height: 40%;
+  width: 90%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer a {
+  margin: 1rem 2rem 0;
 }
