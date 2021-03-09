@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
 
+:root {
+  --text: 081c15;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
+  color: var(--text);
 }
 
 header {
@@ -14,14 +19,22 @@ header {
   padding: 3rem;
 }
 
-body {
-  min-height: 100vh;
-  background: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 75%);
-  background-repeat: no-repeat;
-}
-
 header h1 {
   text-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+header .social a img {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 3vw;
+  min-width: 40px;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #d8f3dc 95%, #2d6a4f 10%);
+  background-repeat: no-repeat;
 }
 
 main {
@@ -42,8 +55,12 @@ main ul {
 
 main ul li {
   margin: 2rem;
+  padding: 1rem;
   transition: transform 0.2s ease-in-out;
-  border-radius: 2px;
+
+  background: #b7e4c7;
+
+  box-shadow: 0 2px 5px 2px rgba(0,0,0,0.25);
 }
 
 main ul li:hover {
@@ -57,11 +74,27 @@ main ul li a {
 
   text-decoration: none;
   font-size: 20px;
-  color: #000;
 
-  margin: 1rem;
+}
+
+main ul li a p {
+  margin: 2rem 0;
 }
 
 main ul li img {
   width: 250px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+  height: 10px;
+}
+   
+::-webkit-scrollbar-track {
+  background:#081c15;
+}
+   
+::-webkit-scrollbar-thumb {
+background: #40916c;
 }

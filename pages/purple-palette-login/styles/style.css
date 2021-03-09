@@ -37,13 +37,11 @@ main h2 {
 
 /* detalhe do risco abaixo de "Login" */
 main h2::before {
-  /* o uso de absolute só pode ocorrer quando o pai é relative */
   content: '';
   position: absolute;
 
   height: 4px;
   width: 25px;
-  /* Quando se utiliza o position: absolute, é possível usar top, bottom, left, right */
   bottom: 3px;
   left: 0px;
   border-radius: 8px;
@@ -68,6 +66,7 @@ form .input-field:first-child {
   width: 100%;
   bottom: -5px;
   left: 0;
+
   background: rgba(0,0,0,0.2);
 }
 
@@ -78,6 +77,7 @@ form .input-field:first-child {
   width: 100%;
   bottom: -5px;
   left: 0;
+  
   background: linear-gradient(to left, #4776E6, #8E54E9);
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
