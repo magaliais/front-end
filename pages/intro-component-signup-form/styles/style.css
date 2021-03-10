@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+:root {
+  --red: hsl(0, 100%, 74%); 
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+body {
+  background: var(--red);
+  background-image: url('../public/images/bg-intro-mobile.png');
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  margin: 5rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ====================  section 1 ==================== */
+main .motivational {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  margin-bottom: 4rem;
+  max-width: 320px;
+}
+
+main .motivational h1 {
+  margin-bottom: 1rem;
+  
+  font-size: 2rem;
+}
+
+/* ====================  section 2 ==================== */
+main section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- button ---------- */
+main section > button {
+  background: var(--blue);
+  padding: 1.5rem;
+
+  border-radius: 10px;
+  box-shadow: 0 0.5rem rgba(0,0,0,0.2);
+  
+  margin-bottom: 1.5rem;
+}
+
+/* ---------- container ---------- */
+main section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem rgba(0,0,0,0.2);
+
+  padding: 1.5rem;
+}
+
+main section .container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+main section .container form .input-field {
+  padding: 1rem;
+  border: 1px solid rgba(62, 60, 73, 0.4);
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+main section .container form .input-field input {
+  color: var(--dark-blue);
+  outline: transparent;
+  font-weight: 500;
+}
+
+main section .container form .input-field input::placeholder {
+  font-weight: 600;
+}
+
+main section .container form button {
+  padding: 1rem;
+  margin: 1rem 0;
+  width: 100%;
+
+  font-weight: 500;
+  background: var(--green);
+  box-shadow: 0 3px rgb(49, 177, 122);
+  border-radius: 5px;
+}
+
+main section .container small {
+  color: var(--grayish-blue);
+  font-size: 0.6rem;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  max-width: 85%;
+}
+
+main section .container small strong {
+  color: var(--red);
+  font-size: 0.7rem;
+}
+
+
+
+
+@media(min-width: 1300px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  main section.motivational {
+    grid-column: 0/1;
+  }
+
+  main .container {
+    grid-column: 1/2;
+  }
+}
