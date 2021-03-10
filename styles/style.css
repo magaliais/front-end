@@ -77,12 +77,16 @@ main ul li a {
 
 }
 
+main ul li img {
+  width: 250px;
+}
+
 main ul li a p {
   margin: 2rem 0;
 }
 
-main ul li img {
-  width: 250px;
+main ul li a small.status {
+  color: #9e2a2b;
 }
 
 /* scrollbar */
