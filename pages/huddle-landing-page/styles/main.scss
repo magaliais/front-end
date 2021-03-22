@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 
-$violet: hsl(257, 40%, 49%);
+$background: hsl(257, 40%, 49%);
 $soft-magenta: hsl(300, 69%, 71%);
 
 $header-font: 'Poppins', sans-serif;
@@ -13,3 +13,11 @@ $body-font: 'Open Sans', sans-serif;
   box-sizing: border-box;
 }
 
+body {
+  width: 100vw;
+  border: 1px solid red;
+}
+
+section header img {
+  width: 100%;
+}

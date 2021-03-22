@@ -6,4 +6,13 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  width: 100vw;
+  border: 1px solid red;
+}
+
+section header img {
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
