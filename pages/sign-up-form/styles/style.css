@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,800;0,900;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #1B2029;
+  color: #FFFFFF;
+  font-weight: 500;
+  
+  display: flex;
+  min-height: 100vh;
+}
+
+main {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: screen;
+}
+
+main h1 {
+  color: #8880FE;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+main .social-media {
+  display: flex;
+  align-content: center;
+}
+
+main .social-media a {
+  text-decoration: none;
+}
+
+main .social-media img {
+  width: 36px;
+  margin-left: 3rem;
+}
+
+main .social-media a:first-child img {
+  margin-left: 0;
+}
+
+main .alternative {
+  margin-top: 1rem;
+}
+
+main .alternative span {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.3);
+  position: relative;
+}
+
+main .alternative span::before, main .alternative span::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 100px;
+  background: rgba(255,255,255,0.3);
+  right: 50px;
+  bottom: 50%;
+}
+
+main .alternative span::after {
+  left: 50px;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main form label {
+  display: flex;
+  flex-direction: column;
+}
+
+main form label span {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+main form label input {
+  background: #161923;
+  width: 300px;
+  height: 50px;
+  padding: 0 0.5rem;
+  margin-top: 1rem;
+  color: rgba(166, 166, 166);
+  font-size: 1rem;
+  border: 1px solid #040B18;
+  border-radius: 8px;
+}
+
+main form label input:focus {
+  outline: thin solid #FFFFFF;
+}
+
+main form button {
+  cursor: pointer;
+  width: 50%;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 32px;
+  background: #6C63FF;
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+}
+
+main form button:hover {
+  background: #5952D4;
+}
+
+section.images {
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+}
+
+section.images img {
+  width: 35vw;
+}
+
+section.images .circle {
+  position: fixed;
+  height: 50vw;
+  width: 50vw;
+  border-radius: 9999px;
+  background: linear-gradient(45deg, #E8CBC0, #636FA4);
+  right: -15%;
+  bottom: -30%;
+  z-index: -1;
+}
