@@ -56,7 +56,7 @@ main ul {
 main ul li {
   margin: 2rem;
   padding: 1rem;
-  transition: transform 0.2s ease-in-out;
+  transition: all 0.25s ease-in-out;
 
   background: #b7e4c7;
 
@@ -65,6 +65,7 @@ main ul li {
 
 main ul li:hover {
   transform: translateY(-1rem);
+  background-color: #40916c;
 }
 
 main ul li a {
