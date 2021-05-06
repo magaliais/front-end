@@ -6,18 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dycalendar.css">
 
-  <title>Glassmorphism</title>
+  <title>Glassmorphism Calendar</title>
 </head>
 <body>
   
   <section>
     <div class="box">
       <div class="container">
-        
+        <div id="dycalendar"></div>
       </div>
     </div>
   </section>
+
+  <script src="dycalendar.js"></script>
+  <script>
+    dycalendar.draw({
+      target: '#dycalendar',
+      type: 'month',
+      dayformat: 'full',
+      monthformat: 'full',
+      highlighttargetdate: true,
+      prevnextbutton: 'show',
+    })
+  </script>
 
 </body>
 </html>
