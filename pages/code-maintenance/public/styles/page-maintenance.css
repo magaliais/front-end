@@ -1,0 +1,176 @@
+body {
+  overflow: hidden;
+}
+
+#mamacode-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 46.5rem;
+  height: auto;
+}
+
+.page-title {
+  color: var(--primary-yellow);
+  font-size: 10rem;
+  margin-top: 50vh;
+  margin-left: 5rem;
+  max-width: 60rem;
+  transform: translateY(-50%);
+}
+
+.page-title::after {
+  content: '_';
+  opacity: 1;
+  animation: step-start 1.07s pisca infinite;
+}
+
+@keyframes pisca {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.parallax-layer {
+  position: absolute;
+  font-size: 6rem;
+  z-index: -1;
+}
+
+.parallax-layer.light-blue-layer {
+  color: var(--light-blue);
+}
+
+.parallax-layer.light-purple-layer {
+  color: var(--light-purple);
+}
+
+.parallax-layer.dark-blue-layer {
+  color: var(--dark-blue);
+}
+
+.parallax-layer.white-layer {
+  color: var(--white);
+}
+
+#scripts-layer-1 {
+  /* top: 6rem; */
+  /* left: 22rem; */
+  top: 10%;
+  left: 15.3%;
+}
+
+#scripts-layer-2 {
+  /* top: 21.5rem;
+  left: 2.4rem; */
+  top: 26%;
+  left: 1.6%;
+}
+
+#game-starter {
+  top: 19%;
+  left: 42%;
+  z-index: 0;
+}
+
+#scripts-layer-3 {
+  top: 6%;
+  left: 81.25%;
+}
+
+#scripts-layer-4 {
+  /* top: 10rem; */
+  /* left: 117rem; */
+  top: 12%;
+  left: 81.25%;
+}
+
+#scripts-layer-5 {
+  /* top: 37.5rem;
+  left: 83rem; */
+  top: 45%;
+  left: 57.6%;
+}
+
+#scripts-layer-6 {
+  top: 62.7%;
+  left: 70%;
+}
+
+#scripts-layer-7 {
+  /* top: 65rem;
+  left: 43rem; */
+  top: 78.4%;
+  left: 30%;
+}
+
+#scripts-layer-8 {
+  /* top: 76rem; */
+  /* left: -4rem; */
+  top: 91%;
+  left: -3%;
+}
+
+#scripts-layer-9 {
+  /* top: 69rem;
+  left: 60rem; */
+  top: 83.2%;
+  left: 41.7%;
+}
+
+#scripts-layer-10 {
+  /* top: 53rem;
+  left: 22rem; */
+  top: 64%;
+  left: 15.3%;
+}
+
+.smartphone-scripts {
+  display: none;
+  font-size: 5rem;
+  z-index: -1;
+}
+
+
+/* modal */
+
+
+
+
+@media (max-width: 600px) {
+  #root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page-title {
+    font-size: 5rem;
+    margin: 0;
+    margin-left: 1.5rem;
+  }
+
+  .smartphone-scripts {
+    display: inline;
+    overflow: hidden;
+    position: absolute;
+    max-width: 100%;
+    text-align: justify;
+    color: var(--primary-dark-purple);
+    opacity: 0.6;
+  }
+
+  .parallax-container {
+    display: none;
+  }
+
+  #mamacode-image {
+    width: 70%;
+  }
+  
+}

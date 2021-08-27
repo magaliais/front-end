@@ -1,0 +1,46 @@
+:root {
+    font-size: 60%;
+}
+
+html {
+    --primary-purple: #3B1B4D;
+    --primary-dark-purple: #251233;
+    --primary-yellow: #FFCE07;
+    --light-blue: #7292F2;
+    --dark-blue: #3C4973;
+    --light-purple: #A650DF;
+    --white: #FEFFF5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* #root {
+    height: 100%;
+    width: 100%;
+} */
+
+body {
+    background: var(--primary-purple);
+    font: 400 1.6rem 'VT323';
+}
+
+/* #root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%;
+    }
+}
