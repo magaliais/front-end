@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Rampart One';
+  background-color: rgb(241, 225, 0);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h1 {
+  z-index: 2;
+  font-size: 4rem;
+  color: rgb(161, 0, 139);
+}
+
+
+
+
+
+.parallax-layer {
+  position: absolute;
+  font-size: 2rem;
+  z-index: 1;
+}
+
+.parallax-layer.light-blue-layer {
+  color: rgb(37, 164, 206);
+}
+
+.parallax-layer.light-purple-layer {
+  color: purple;
+}
+
+.parallax-layer.dark-blue-layer {
+  color: darkblue;
+}
+
+.parallax-layer.white-layer {
+  color: white;
+}
+
+
+
+/* individual */
+#words-layer-1 {
+  /* top: 6rem; */
+  /* left: 22rem; */
+  top: 10%;
+  left: 15.3%;
+}
+
+#words-layer-2 {
+  /* top: 21.5rem;
+  left: 2.4rem; */
+  top: 26%;
+  left: 1.6%;
+}
+
+#game-starter {
+  top: 19%;
+  left: 42%;
+  z-index: 0;
+}
+
+#words-layer-3 {
+  top: 6%;
+  left: 81.25%;
+}
+
+#words-layer-4 {
+  /* top: 10rem; */
+  /* left: 117rem; */
+  top: 20%;
+  left: 70.25%;
+}
+
+#words-layer-5 {
+  /* top: 37.5rem;
+  left: 83rem; */
+  top: 40%;
+  left: 57.6%;
+}
+
+#words-layer-6 {
+  top: 62.7%;
+  left: 70%;
+}
+
+#words-layer-7 {
+  /* top: 65rem;
+  left: 43rem; */
+  top: 78.4%;
+  left: 30%;
+}
+
+#words-layer-8 {
+  /* top: 76rem; */
+  /* left: -4rem; */
+  top: 91%;
+  left: -1%;
+}
+
+#words-layer-9 {
+  /* top: 69rem;
+  left: 60rem; */
+  top: 83.2%;
+  left: 41.7%;
+}
+
+#words-layer-10 {
+  /* top: 53rem;
+  left: 22rem; */
+  top: 64%;
+  left: 15.3%;
+}
