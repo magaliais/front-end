@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="container__bg">
+      <div class="box box--signin">
+        <h2 class="box__title">Already Have an Account?</h2>
+        <button class="btn btn--signin">Sign In</button>
+      </div>
+      <div class="box box--signup">
+        <h2 class="box__title">Don't Have an Account?</h2>
+        <button class="btn btn--signup">Sign Up</button>
+      </div>
+    </div>
+    <div class="formBox">
+      <div class="form form--signin">
+        <form>
+          <h3>Sign In</h3>
+          <input type="text" placeholder="Username">
+          <input type="password" placeholder="Password">
+          <input type="submit" value="Login" class="form__btn form__btn--signin">
+          <a href="#" class="forgot">Forgot Password?</a>
+        </form>
+      </div>
+      <div class="form form--signup">
+        <form>
+          <h3>Sign Up</h3>
+          <input type="text" placeholder="Username">
+          <input type="text" placeholder="Email Address">
+          <input type="password" placeholder="Password">
+          <input type="password" placeholder="Confirm Password">
+          <input type="submit" value="Register" class="form__btn form__btn--signup">
+          <a href="#" class="forgot">Forgot Password</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const signinBtn = document.querySelector('.btn--signin');
+    const signupBtn = document.querySelector('.btn--signup');
+    const formBox = document.querySelector('.formBox');
+    const form = document.querySelector('.form');    
+
+    signinBtn.addEventListener('click', () => {
+      formBox.classList.toggle('active');
+
+      form.classList.toggle('active');
+      
+      document.body.style.background = 'var(--blue)';
+    });
+    signupBtn.addEventListener('click', () => {
+      formBox.classList.toggle('active');
+      
+      form.classList.toggle('active');
+
+      document.body.style.background = 'var(--red)';
+    });
+  </script>
+</body>
+</html>
