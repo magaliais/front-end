@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Consolas;
+  font-size: 1.5rem;
+}
+
+section.container {
+  width: 500px;
+  background: #fff;
+  height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: none;
+  padding: 1rem;
+  margin: 2rem;
+  flex: 1;
+  background: hsl(9, 100%, 64%);
+  color: aliceblue;
+  cursor: pointer;
+
+  box-shadow: 0 10px hsl(9, 100%, 54%);
+
+  border-radius: 5px;
+
+  outline: transparent;
+
+  transition: all 75ms ease;
+}
+
+button:hover {
+  box-shadow: 0 5px hsl(9, 100%, 54%);
+  transform: translateY(5px);
+}
+
+button:active {
+  box-shadow: 0 0px hsl(9, 100%, 54%);
+  transform: translateY(10px);
+}
